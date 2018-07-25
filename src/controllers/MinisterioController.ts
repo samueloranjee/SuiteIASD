@@ -5,6 +5,7 @@ export class Ministerio{
 
     constructor(nome: string, descricao: string) {
         this.nome = nome;
+        this.descricao = descricao;
     }
 
     set nome(nome: string){
@@ -14,10 +15,10 @@ export class Ministerio{
         return this._nome;
     }
 
-    set descrica(descricao: string){
+    set descricao(descricao: string){
         this._descricao = descricao;
     }
-    get descrica(): string{
+    get descricao(): string{
         return this._descricao;
     }
 
