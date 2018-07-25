@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {MembroController} from '../../controllers/MembroController';
 
 /**
  * Generated class for the MembroPage page.
@@ -15,7 +16,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MembroPage {
 
+  membro: MembroController;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.membro = new MembroController("Gabriel");
   }
 
   ionViewDidLoad() {
