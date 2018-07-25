@@ -8,10 +8,10 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
-import { MembroPage } from '../pages/membro/membro';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { MembroPage } from '../pages/membro/membro';
+import { MinisterioPage } from '../pages/ministerio/ministerio';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    MembroPage
+    MembroPage,
+    MinisterioPage,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
+    MinisterioPage,
     MembroPage
   ],
   providers: [
