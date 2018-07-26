@@ -12,10 +12,10 @@ import { MembroPage } from '../membro/membro';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
-  tab4Root = MinisterioPage;
-  tab5Root = MembroPage;
+  tab2Root = MinisterioPage;
+  tab3Root = MembroPage;
+  tab4Root = AboutPage;
+  tab5Root = ContactPage;
   
   constructor() {
 
