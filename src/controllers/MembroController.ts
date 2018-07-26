@@ -1,10 +1,9 @@
 export class MembroController {
 
     _nome: string;
+    resultado: string;
 
-    constructor(newNome: string){
-        this.nome = newNome;
-    }
+    constructor(){}
 
     get nome(): string {
         return this._nome; 
@@ -14,4 +13,17 @@ export class MembroController {
         this._nome = newNome;
     }
 
+    enviar(): void {
+        this.resultado = this.nome;
+    }
+
+    mostrar(): string{
+       return this.resultado;
+    };
+
+    limpar(): void {
+        this.nome = "";
+        this.resultado = "";
+    }
+    
 }

@@ -18,8 +18,13 @@ export class MembroPage {
 
   membro: MembroController;
 
+  resultado: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.membro = new MembroController("Gabriel");
+    this.membro = new MembroController();
+    this.membro.enviar();
+    this.membro.mostrar();
+    this.membro.limpar();
   }
 
   ionViewDidLoad() {

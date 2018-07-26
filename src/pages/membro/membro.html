@@ -14,5 +14,18 @@
 
 
 <ion-content padding>
- <p>{{membro.nome}}</p>
+
+    <ion-list>
+
+      <ion-item>
+        <ion-label stacked>Nome do Membro</ion-label>
+        <ion-input type="text" [(ngModel)]="membro.nome"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button (click)="membro.enviar()">Enviar</button>
+    <button ion-button (click)="membro.limpar()">Limpar</button>
+  
+    {{membro.mostrar()}}
+
 </ion-content>
